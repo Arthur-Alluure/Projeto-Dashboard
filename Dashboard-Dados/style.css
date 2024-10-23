@@ -1,0 +1,7 @@
+body {
+    overflow-x: hidden; /* Para evitar rolagem horizontal */
+}
+.sidebar {
+    height: 100vh; /* Altura da sidebar */
+    position: fixed;
+}
