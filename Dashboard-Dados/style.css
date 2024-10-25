@@ -9,6 +9,7 @@ body, html {
     height: 100vh; /* Garante que a sidebar ocupe toda a altura */
 }
 
+
 /* Sidebar */
 .sidebar {
     width: 80px;
@@ -19,8 +20,17 @@ body, html {
 }
 
 .sidebar.expanded {
-    width: 240px;
+    width: 150px;
 }
+
+.card {
+    margin-right: 10px;
+}
+
+#teste{
+    width: 400px;
+}
+
 
 .sidebar ul {
     padding: 0;
