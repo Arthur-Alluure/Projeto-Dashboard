@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Dashboard</title>
     <link rel="stylesheet" href="plugins/bootstrap-5.3.3-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 
@@ -14,7 +14,7 @@
     <!-- Wrapper Principal -->
     <div class="main-wrapper">
         <!-- Sidebar -->
-        <div id="sidebar" class="sidebar">
+        <div id="sidebar" class="sidebar bg-dark">
             <button id="toggle-btn" class="btn btn-outline-primary">☰</button>
             <ul class="list-unstyled">
                 <li><a href="#"><i class="bi bi-house"></i> <span class="desc">Home</span></a></li>
@@ -39,36 +39,52 @@
 
             <!-- Conteúdo principal -->
             <div class="content">
-                <div class="row col-13 g-1">
-                    <div class="card col-4 mb-2">
+                <div class="row">
+                    <div class="card col-xl-4">
                         <div class="card-header">
-                            <h3 class="card-title">Informação</h3>
+                            <h3 class="card-title">Informação aaaaaabbb</h3>
                         </div>
                         <div class="card-body">
-                            <canvas id="myChart"
+                            <canvas id="chart1"
+                                style="min-height: 200px; height: 250px; max-height: 300px; max-width: 100%;"></canvas>
+                        </div>
+                    </div>                 
+                    <div class="card col-xl-7">
+                        <div class="card-header">
+                            <h3 class="card-title">Taxa de Câmbio Dólar Atual</h3>
+                        </div>
+                        <div class="card-body">
+                            <canvas id="chart2"
                                 style="min-height: 200px; height: 250px; max-height: 300px; max-width: 100%;"></canvas>
                         </div>
                     </div>
-                    <div class="card col-5 mb-2">
+                </div><br>
+                <div class="row">
+                    <div class="card col-xl-12">
                         <div class="card-header">
                             <h3 class="card-title">Informação</h3>
                         </div>
                         <div class="card-body">
-                            <canvas id="myChart2"
-                                style="min-height: 200px; height: 250px; max-height: 300px; max-width: 100%;"></canvas>
-                        </div>
-                    </div>
-                    <div class="card col-2 mb-2" id="teste">
-                        <div class="card-header">
-                            <h3 class="card-title">Informação</h3>
-                        </div>
-                        <div class="card-body">
-                            <canvas id="myChart3"
-                                style="min-height: 200px; height: 250px; max-height: 300px; max-width: 100%;"></canvas>
+                            <canvas id="chart3"
+                                style="min-height: 100px; height: 350px; max-height: 350px; max-width: 100%;"></canvas>
                         </div>
                     </div>
                 </div>
+
             </div>
+            <footer class="bg-dark text-white text-center py-2" id="footer">
+                <div class="container">
+                    <p class="mb-1">&copy; 2025 Arthur Moreira</p>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Início</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Sobre</a></li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Contato</a>
+                        </li>
+                        <li class="list-inline-item"><a href="#" class="text-white text-decoration-none">Política de
+                                Privacidade</a></li>
+                    </ul>
+                </div>
+            </footer>
         </div>
     </div>
 
